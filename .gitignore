@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+venv/
+.venv/
+
+# Sorties générées (JSON par fichier analysé)
+*_piste.json
+*.json
+!exemple_output.json
+
+# Fichiers audio (ne pas committer)
+*.wav
+*.mp3
+*.flac
+*.aiff
+*.ogg

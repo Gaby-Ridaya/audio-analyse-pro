@@ -1,0 +1,2 @@
+fichier,duree_sec,tempo,rms,peak,lufs,true_peak_db,lra_lu,snr_db,min_freq,max_freq,pitch_dominant,key,spectral_centroid,spectral_rolloff,spectral_flatness,stereo_width,ms_ratio_db,correlation,nb_transitoires,crest_factor,dynamique_rms,grave,bas_medium,medium,haut_medium,aigu
+Fantasy.wav,3600.0334240362813,112.34714673913044,0.10107840946867784,0.46206212043762207,-20.991714508510686,-6.71,1.3,37.469637765928205,0.0,1485.8,161.5,E,628.6,2863.9,0.779558,0.5027,-4.74,0.4973,1403,13.20083928046496,0.017684029415249825,6059.5524,1715.2586,252.4948,4.1036,0.5536
