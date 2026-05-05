@@ -159,6 +159,41 @@ WAV, MP3, FLAC, AIFF, OGG
 
 ---
 
+## Utiliser les JSON avec une IA pour votre mixage
+
+Chaque analyse génère un fichier JSON détaillé. Vous pouvez **soumettre ce fichier directement à une IA** (Claude, ChatGPT, etc.) pour obtenir des conseils personnalisés sur votre mixage.
+
+### Exemple de prompt à copier-coller
+
+```
+Voici le fichier JSON généré par Audio Analyse Pro pour mon mix :
+
+[coller le contenu du fichier JSON ici]
+
+Peux-tu analyser ces données et me donner des conseils concrets pour :
+- Équilibrer les fréquences (graves, médiums, aigus)
+- Améliorer la dynamique et la compression
+- Corriger les problèmes de loudness (LUFS / True Peak)
+- Optimiser l'image stéréo (Mid/Side)
+- Appliquer les recommandations EQ suggérées
+```
+
+### Ce que l'IA peut faire avec ces données
+
+| Données JSON | Ce que l'IA peut vous conseiller |
+|---|---|
+| `lufs`, `true_peak_db`, `lra_lu` | Réglages du limiter, niveau de mastering |
+| `crest_factor`, `dynamique_rms` | Type et intensité de compression recommandés |
+| `energie_par_bande_db` | Corrections EQ globales (shelf, peak) |
+| `mid_side.ms_ratio_db` | Largeur stéréo, compatibilité mono |
+| `recommandations_eq` *(piste)* | EQ point par point avec fréquence, gain et Q |
+| `zones_critiques` *(piste)* | Diagnostic Mud / Boxiness / Harshness / Air |
+| `resonances_detectees` *(piste)* | Résonances à couper, fréquences exactes |
+
+> Le JSON contient toutes les métriques numériques dont une IA a besoin pour formuler des recommandations précises — pas besoin de lui envoyer le fichier audio.
+
+---
+
 ## Licence
 
 MIT
